@@ -18,3 +18,7 @@ ON "CharlotteChaze/BreakIntoTech"."netflix_titles_info"."show_id" = "CharlotteCh
 -- (*) When querying tables created outside of the public (default) schema,
 --     be sure to specify the desired schema, e.g. "SELECT * FROM my_schema."my data.csv";".
 
+-- 1) How many movie titles are there in the database? (movies only, not tv shows)
+SELECT COUNT(*)
+FROM "CharlotteChaze/BreakIntoTech"."netflix_titles_info"
+WHERE type = 'Movie';
