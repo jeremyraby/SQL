@@ -22,3 +22,8 @@ ON "CharlotteChaze/BreakIntoTech"."netflix_titles_info"."show_id" = "CharlotteCh
 SELECT COUNT(*)
 FROM "CharlotteChaze/BreakIntoTech"."netflix_titles_info"
 WHERE type = 'Movie';
+
+-- 2) When was the most recent batch of tv shows and/or movies added to the database?
+
+SELECT MAX(DATE(date_added)) -- DATE converts datetime format to only date, which can then by aggregated
+FROM "CharlotteChaze/BreakIntoTech"."netflix_titles_info";
