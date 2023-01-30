@@ -13,3 +13,4 @@ This is a collection of queries written for the Netflix project as part of Charl
 - GROUP BY
 - ORDER BY
 - LIMIT
+- PostgreSQL
